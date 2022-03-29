@@ -199,8 +199,8 @@ list_support() {
   echo "chriskempson/base16-xresources"
   echo "khamer/base16-dunst"
   echo "khamer/base16-termite"
-  echo "nicodebo/base16-fzf"
-  echo "nicodebo/base16-zathura"
+  echo "fnune/base16-fzf"
+  echo "fnune/base16-zathura"
   echo "theova/base16-qutebrowser"
   echo "rkubosz/base16-sway"
 }
@@ -276,10 +276,10 @@ set_theme() {
       "khamer/base16-dunst")
         set_dunst "$package" "$theme"
         ;;
-      "nicodebo/base16-fzf")
+      "fnune/base16-fzf")
         set_fzf "$package" "$theme"
         ;;
-      "nicodebo/base16-zathura")
+      "fnune/base16-zathura")
         set_generic "$package" "$theme" "#" ' ' \
           "$HOME/.config/zathura/zathurarc"
         ;;
