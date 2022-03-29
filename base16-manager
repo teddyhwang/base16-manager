@@ -450,11 +450,7 @@ set_fzf() {
   local line="[ -f ~/.fzf.colors ] && source ~/.fzf.colors"
   local configs=".bashrc .zshrc .config/fish/config.fish"
 
-  if command -v fish >/dev/null 2>&1; then
-    file="$DATA_PATH/$package/fish/base16-$theme.fish"
-  else
-    file="$DATA_PATH/$package/bash/base16-$theme.config"
-  fi
+  file="$DATA_PATH/$package/bash/base16-$theme.config"
 
   if ! file_exists "$file"; then
     err "FZF theme not found."
