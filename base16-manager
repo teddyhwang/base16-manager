@@ -233,7 +233,7 @@ update() {
 
   for package in $packages; do
     cd "$DATA_PATH"/"$package" || exit
-    git pull -f origin master
+    git pull
   done
 
   echo "All packages updated."
