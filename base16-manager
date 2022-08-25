@@ -199,7 +199,7 @@ list_support() {
   echo "chriskempson/base16-xresources"
   echo "khamer/base16-dunst"
   echo "khamer/base16-termite"
-  echo "fnune/base16-fzf"
+  echo "base16-project/base16-fzf"
   echo "fnune/base16-zathura"
   echo "theova/base16-qutebrowser"
   echo "rkubosz/base16-sway"
@@ -276,7 +276,7 @@ set_theme() {
       "khamer/base16-dunst")
         set_dunst "$package" "$theme"
         ;;
-      "fnune/base16-fzf")
+      "base16-project/base16-fzf")
         set_fzf "$package" "$theme"
         ;;
       "fnune/base16-zathura")
