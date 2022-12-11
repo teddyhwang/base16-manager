@@ -482,7 +482,7 @@ set_shell() {
   elif ! file_exists "$file"; then
     err "Shell theme not found."
   else
-    eval "$($helper)"
+    source "$helper"
     _base16 "$file"
 
     if command -v fish >/dev/null 2>&1; then
